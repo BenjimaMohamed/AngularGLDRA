@@ -30,7 +30,7 @@ export class LoginComponent {
         // Si la réponse est un succès, redirigez l'utilisateur vers le tableau de bord
         if (response.message === 'Connexion réussie') {
           console.log('Redirection vers le tableau de bord...');
-          this.router.navigateByUrl('/restaurants');
+          this.router.navigateByUrl('/admin');
         } else {
           console.log('La réponse du serveur ne contient pas "Connexion réussie".');
         }
@@ -41,7 +41,5 @@ export class LoginComponent {
       }
     );
   }
-  goToInscription() {
-    this.router.navigate(['/inscription']);
-  }
+
 }
